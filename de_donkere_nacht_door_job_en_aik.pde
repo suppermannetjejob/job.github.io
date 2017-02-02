@@ -1,11 +1,4 @@
-import ddf.minim.*;                                                                                                                                                                                                                                                                                                                                                                                                                                                 // dit zal jij nooit zien hahaha
-import ddf.minim.analysis.*;
-import ddf.minim.effects.*;
-import ddf.minim.signals.*;
-import ddf.minim.spi.*;      
-import ddf.minim.ugens.*;
-Minim minim;
-AudioPlayer music;
+
 float level = 0; 
 float poppetje =0;
 float x = 0;
@@ -33,9 +26,7 @@ PImage plaatje9;
 PImage plaatje10;
 int leven = 1000;
 void setup() {
-  minim = new Minim(this);
-  music = minim.loadFile("Night of Chaos.mp3", 2048);
-  music.loop();
+ 
   size(2000, 1000);
   plaatje = loadImage("Fireblast_strip3.png");
   // plaatje2.resize(100, 100);
