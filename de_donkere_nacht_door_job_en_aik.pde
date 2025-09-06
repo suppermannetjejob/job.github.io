@@ -27,7 +27,7 @@ PImage plaatje10;
 int leven = 1000;
 void setup() {
  
-  size(2000, 1000);
+  fullScreen();
   plaatje = loadImage("Fireblast_strip3.png");
   // plaatje2.resize(100, 100);
   plaatje3 = loadImage("duche.jpg");
@@ -38,11 +38,11 @@ void setup() {
   plaatje8 = loadImage("arena.jpg");
   plaatje9 = loadImage("De-Nachtwacht.png");
   plaatje10 =loadImage("end.jpg");
-  plaatje4.resize(1700, 1000);
-  plaatje3.resize(1700, 1000);
-  plaatje8.resize(1700, 1000);
+  plaatje4.resize(width, height);
+  plaatje3.resize(width, height);
+  plaatje8.resize(width, height);
   plaatje9.resize(400, 400);
-  plaatje10.resize(1979,1000);
+  plaatje10.resize(width, height);
   plaatje2 = loadImage("wc.jpg");
 }
 
@@ -1083,5 +1083,10 @@ leven = leven -1;   }
   if (key == 'X' ) {                      
 
     x2=x2 +100;
+  }
+  
+   if (key == 'B' ) {                      
+
+    x2=x2 -100;
   }
 }
